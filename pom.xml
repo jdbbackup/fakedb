@@ -7,7 +7,7 @@
 	</parent>
 	<artifactId>jdbbackup-fakesource</artifactId>
 	<version>1.0.0</version>
-	<description>A fake JDBBackup database dumper</description>
+	<description>A fake JDBBackup source manager</description>
 	<scm>
 		<url>https://github.com/jdbbackup/jdbbackup-fakesource.git</url>
 		<connection>https://github.com/jdbbackup/jdbbackup-fakesource.git</connection>
