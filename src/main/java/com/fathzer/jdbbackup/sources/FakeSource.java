@@ -19,6 +19,7 @@ import com.fathzer.jdbbackup.utils.BasicExtensionBuilder;
  * <li>IO: The save method throws an IOException</li>
  * <li>Illegal: The save method throws an IllegalArgumentException</li>
  * <li>Err: The save method throws a RuntimeException that is not an IllegalArgumentException</li>
+ * </ul>
  */
 public class FakeSource implements SourceManager {
 

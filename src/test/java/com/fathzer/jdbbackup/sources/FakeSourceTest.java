@@ -11,15 +11,16 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.io.TempDir;
 
 import com.fathzer.jdbbackup.SourceManager;
-import com.fathzer.jdbbackup.utils.PluginRegistry;
+import com.fathzer.plugin.loader.classloader.ClassLoaderPluginLoader;
+import com.fathzer.plugin.loader.utils.PluginRegistry;
 
 class FakeSourceTest {
 	@TempDir Path tempDir;
 	
 	@Test
 	void test() throws IOException {
-		final PluginRegistry<SourceManager> registry = new PluginRegistry<>(SourceManager.class, s -> s.getScheme());
-		registry.load(ClassLoader.getSystemClassLoader());
+		final PluginRegistry<SourceManager> registry = new PluginRegistry<>(s -> s.getScheme());
+		registry.registerAll(new ClassLoaderPluginLoader().getPlugins(SourceManager.class));
 
 		final SourceManager m = registry.get("fake");
 		assertNotNull(m);
