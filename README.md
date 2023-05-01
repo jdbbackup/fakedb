@@ -1,7 +1,7 @@
-![Maven Central](https://img.shields.io/maven-central/v/com.fathzer/jdbbackupp-fakesource)
+![Maven Central](https://img.shields.io/maven-central/v/com.fathzer/jdbbackup-fakesource)
 ![License](https://img.shields.io/badge/license-Apache%202.0-brightgreen.svg)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=jdbbackup_jdbbackupp-fakesource&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=jdbbackupp_jdbbackupp-fakesource)
-[![javadoc](https://javadoc.io/badge2/com.fathzer/jdbbackupp-fakesource/javadoc.svg)](https://javadoc.io/doc/com.fathzer/jdbbackupp-fakesource)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=jdbbackup_jdbbackup-fakesource&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=jdbbackup_jdbbackup-fakesource)
+[![javadoc](https://javadoc.io/badge2/com.fathzer/jdbbackup-fakesource/javadoc.svg)](https://javadoc.io/doc/com.fathzer/jdbbackup-fakesource)
 
 # jdbbackup-fakesource
 A fake [JDBBackupp](https://github.com/jdbbackup/jdbbackup-core) SourceManager implementation that can be used for tests.
